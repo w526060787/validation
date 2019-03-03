@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form-validate-demo</title>
+    <script src="jquery-1.9.1.js"></script>
+    <script src="jquery.validate.js"></script>
+    <script src="additional-methods.js"></script>
+</head>
+<body>
+    <h1>注册表</h1>
+<!--     <form action="#" id="userForm">
+        姓名：<input type="text" name="userName" class="required">
+        年龄：<input type="age" name="age" class="required">
+        邮箱：<input type="email" name="mail" class="required">
+        <input type="submit" value="提交">
+    </form>
+    <script>
+    $.ready(function(){
+        debug:true;
+        $("#userForm").validate();
+    })
+    </script> -->
+
+<form action="#" id="userForm" method="post">
+    用户名：<input type="text" name="name" id="name" required max="150">
+    <br>
+    密码：<input type="password" name="password" id="password" required min="5" max="7">
+
+    <br><input type="submit" value="提交">
+</form>
+
+<script>
+    var $userForm = $("#userForm");
+    $userForm.validate();
+</script>
+</body>
+</html>

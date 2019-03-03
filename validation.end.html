@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form-validate-demo</title>
+    <script src="jquery-1.9.1.js"></script>
+    <script src="jquery.validate.js"></script>
+    <script src="additional-methods.js"></script>
+    <style>
+    #userForm label.error{
+        color: red;
+    }
+    </style>
+</head>
+<body>
+    <h1>注册表</h1>
+    <form action="#" method="get" id="userForm">
+        用户名：<input type="text" name="userName"><span>*</span><br>
+        年龄：<input type="text" name="age"><span>*</span><br>
+        密码：<input type="password" name="password" id="password"><span>*</span><br>
+        确认密码：<input type="password"name="password" id="conformPassword"><span>*</span><br>
+        出 生 地:<select name="address"><option value="">--</option><option value="1">北京</option>
+            <option value="1">上海</option><option value="1">深圳</option></select><span>*</span></br>
+        手机:<input type="text" name="mobile" ><span>*</span></br>
+        邮箱:<input type="text" name="email" ><span>*</span></br>
+        现居住地：<input type="text" name="nowAddress"></br>
+        <input type="submit" value="提交">        
+    </form>
+    <script src="mine.js"></script>
+
+</body>
+</html>
